@@ -16,7 +16,7 @@
 }
 
 body{
-    background:linear-gradient(to bottom,rgba(0,0,0,0.75),rgba(0,0,0,0.95)),
+    background:linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.95)),
     url("https://i.ibb.co/S7dBM3j7/1000053356.jpg") no-repeat center/cover;
     color:#fff;
 }
@@ -28,28 +28,29 @@ body{
 }
 
 .header h1{
-    font-size:32px;
+    font-size:30px;
     color:#00eaff;
     text-shadow:0 0 15px #00eaff;
 }
 
 .header p{
+    margin-top:10px;
     opacity:0.85;
-    margin-top:8px;
 }
 
-/* DOWNLOAD CARD */
+/* MAIN CARD */
 .card{
     width:92%;
-    max-width:420px;
+    max-width:400px;
     margin:-20px auto 40px;
     background:rgba(20,20,30,0.9);
-    border-radius:22px;
+    border-radius:20px;
     padding:25px;
-    box-shadow:0 0 30px rgba(0,255,255,0.25);
+    box-shadow:0 0 30px rgba(0,255,255,0.2);
     text-align:center;
 }
 
+/* BUTTONS */
 .download-btn{
     display:block;
     margin:20px 0;
@@ -59,7 +60,11 @@ body{
     color:#fff;
     text-decoration:none;
     background:linear-gradient(135deg,#00eaff,#0066ff);
-    box-shadow:0 0 25px rgba(0,234,255,0.9);
+    box-shadow:0 0 20px rgba(0,234,255,0.8);
+}
+
+.download-btn:active{
+    transform:scale(0.96);
 }
 
 .tutorial-btn{
@@ -70,6 +75,7 @@ body{
     font-size:14px;
 }
 
+/* TRUST BADGES */
 .badges{
     display:flex;
     justify-content:space-around;
@@ -78,73 +84,23 @@ body{
     opacity:0.9;
 }
 
-/* ABOUT / STATS */
-.about{
-    width:92%;
-    max-width:420px;
-    margin:40px auto;
-    background:rgba(20,20,30,0.9);
-    padding:25px;
-    border-radius:22px;
-    text-align:center;
-}
-
-.about h2{
-    color:#00eaff;
-    margin-bottom:10px;
-}
-
-.about p{
-    font-size:14px;
-    opacity:0.85;
-    margin-bottom:25px;
-}
-
-.stats{
-    display:flex;
-    gap:15px;
-}
-
-.stat{
-    flex:1;
-    background:rgba(0,0,0,0.5);
-    padding:20px;
-    border-radius:15px;
-}
-
-.rating{
-    margin-top:15px;
-    background:rgba(0,0,0,0.5);
-    padding:20px;
-    border-radius:15px;
-}
-
-.stat h3, .rating h3{
-    font-size:26px;
-}
-
-.stat span, .rating span{
-    font-size:12px;
-    opacity:0.8;
-}
-
 /* SCREENSHOTS */
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+    color:#00eaff;
+}
+
 .screenshots{
     padding-bottom:60px;
 }
 
-.screenshots h2{
-    text-align:center;
-    color:#00eaff;
-    margin-bottom:20px;
-}
-
 .screenshots img{
     width:92%;
-    max-width:400px;
+    max-width:380px;
     margin:15px auto;
     display:block;
-    border-radius:18px;
+    border-radius:15px;
     box-shadow:0 0 25px rgba(0,0,0,0.8);
 }
 </style>
@@ -160,15 +116,12 @@ body{
 
 <!-- DOWNLOAD CARD -->
 <div class="card">
-
-    <!-- ✅ WORKING DOWNLOAD BUTTON -->
-    <a class="download-btn"
-       href="https://drive.google.com/uc?export=download&id=1RLDjtnxmZYqG4CD42H9lmTvqFZ2OUYhE">
-       ⬇ Download APK
+    <a class="download-btn" href="https://drive.google.com/file/d/1_PhzupsLx0AwcJ70uCrhbfmSE_YbfAQJ/view?usp=drivesdk" download>
+        ⬇ Download APK
     </a>
 
     <a class="tutorial-btn"
-       href="https://youtube.com/shorts/R8F_iKCuPOw"
+       href="https://youtube.com/shorts/R8F_iKCuPOw?si=djZDLcHedPd0RzTR"
        target="_blank">
        ▶ Watch How To Play
     </a>
@@ -180,35 +133,9 @@ body{
     </div>
 </div>
 
-<!-- ABOUT / FAKE STATS -->
-<div class="about">
-    <h2>About X Battle</h2>
-    <p>
-        Welcome to the official page of <b>X Battle</b>.<br>
-        Join tournaments and win rewards.
-    </p>
-
-    <div class="stats">
-        <div class="stat">
-            <h3>600</h3>
-            <span>Downloads</span>
-        </div>
-
-        <div class="stat">
-            <h3>510</h3>
-            <span>Active Users</span>
-        </div>
-    </div>
-
-    <div class="rating">
-        <h3>552</h3>
-        <span>Total Ratings</span>
-    </div>
-</div>
-
 <!-- SCREENSHOTS -->
 <div class="screenshots">
-    <h2>App Preview</h2>
+    <h2 class="section-title">App Preview</h2>
 
     <img src="https://i.ibb.co/XxLxP40J/1000041231.jpg">
     <img src="https://i.ibb.co/ym87LsBx/1000044976.jpg">
